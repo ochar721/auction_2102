@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/item'
-require './lib/atendee'
+require './lib/attendee'
 require './lib/auction'
 
 class AuctionTest < Minitest::Test
