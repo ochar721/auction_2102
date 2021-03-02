@@ -11,4 +11,9 @@ class ItemTest < Minitest::Test
     item2 = Item.new('Bamboo Picture Frame')
     assert_equal "Bamboo Picture Frame", item2.name
   end
+
+  def test_it_starts_with_no_bids
+    item1 = Item.new('Chalkware Piggy Bank')
+    assert_equal ({}), item1.bids
+  end
 end
