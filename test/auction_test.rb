@@ -250,7 +250,6 @@ class AuctionTest < Minitest::Test
   end
 
   def test_it_has_bidders
-    skip
     item1 = Item.new('Chalkware Piggy Bank')
     item2 = Item.new('Bamboo Picture Frame')
     item3 = Item.new('Homemade Chocolate Chip Cookies')

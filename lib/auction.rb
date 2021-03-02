@@ -29,12 +29,12 @@ class Auction
     highest.compact.sum
   end
 
-
-  def bidders
-    bidder_names = []
-      @items.each do |item|
-      bidder_names <<  item.bids
+    def bidders
+    names = []
+    @items.map do |item|
+      item.bids.map do |bid|
+        names << bid[0].name
       end
-      bidder_names[0].name
-    end
+    end.flatten.uniq
+  end
 end
